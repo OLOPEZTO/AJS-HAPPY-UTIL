@@ -1,0 +1,15 @@
+**** EMAIL ****
+Agregar una direccion de correo como remitente autorizado:
+App Engine > Configuración > Remitentes de correo electrónico
+La cuenta debe estar previamente marcada como administrador de proyecto para tener atributos para funjir como remitente
+formatos@villaeducativa.edu.mx FormatosVilla2019-2020
+
+**** AUTENTICA EMAIL ******
+https://support.google.com/a/answer/174124?hl=es
+https://support.google.com/a/answer/180504?hl=es&ref_topic=2752442
+
+Gradle:
+ compile 'com.google.api-client:google-api-client:1.23.0'
+ compile 'com.google.oauth-client:google-oauth-client-jetty:1.23.0'
+ compile 'com.google.apis:google-api-services-drive:v3-rev110-1.23.0'
+ 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+  <!-- https://cloud.google.com/appengine/docs/standard/java/config/appref -->
+  <!-- Modulo de servicio, en caso de no informarlo se instancia en default -->
+  <!-- module>utils</module -->
+  
+  <threadsafe>true</threadsafe>
+  <sessions-enabled>true</sessions-enabled>
+  <runtime>java8</runtime>
+
+</appengine-web-app>

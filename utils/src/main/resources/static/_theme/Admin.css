@@ -1,0 +1,23 @@
+html {
+	height:100%;
+}
+
+body {
+	height:100%;
+}
+
+h4 {
+	text-align: left;
+	color: navy;
+	font-family: arial, tahoma, serif;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+h5 {
+	text-align: left;
+	color: red;
+	font-family: arial, tahoma, serif;
+	font-size: 10pt;
+	font-weight: bold;
+}

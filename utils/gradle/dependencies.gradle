@@ -1,0 +1,52 @@
+repositories {
+	mavenCentral()
+    maven {
+      url 'https://maven-central.storage.googleapis.com'             // Google's mirror of Maven Central
+    }
+}
+
+dependencies {
+
+	compile(
+	    // SPRING
+        ["org.springframework.boot:spring-boot-starter"],
+        ["org.springframework.boot:spring-boot-starter-web"],
+        //["org.springframework.boot:spring-boot-starter-data-jpa"],
+        ["org.springframework.boot:spring-boot-starter-actuator"],
+        ["org.springframework.boot:spring-boot-configuration-processor"],
+		["org.springframework.boot:spring-boot-starter-hateoas"],
+		// JSP 
+		["javax.servlet:jstl"],
+        // LOMBOK
+		["org.projectlombok:lombok:${lombokVersion}"],
+		// GCP
+		//["com.google.cloud.tools:appengine-gradle-plugin:2.+"],
+	    // SWAGGER
+        ["io.springfox:springfox-swagger2:${springFoxVersion}"],
+        ["io.springfox:springfox-swagger-ui:${springFoxVersion}"],
+		// Log4j2
+		["org.apache.logging.log4j:log4j-core:2.7"],
+		// JWT 
+		["io.jsonwebtoken:jjwt:0.9.1"],
+		// EMAIL
+		["javax.mail:mail:1.4"],
+		// GCStorage
+		["com.google.cloud:google-cloud-storage:1.62.0"],
+		// SLIDES
+		["com.google.api-client:google-api-client:1.23.0"],
+    	["com.google.oauth-client:google-oauth-client-jetty:1.23.0"],
+    	["com.google.apis:google-api-services-slides:v1-rev294-1.23.0"],
+    	// DRIVE
+    	["com.google.apis:google-api-services-drive:v3-rev110-1.23.0"]
+    )
+    
+    providedRuntime('org.apache.tomcat.embed:tomcat-embed-jasper')
+    providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+    
+    testCompile (
+        ["org.springframework.boot:spring-boot-starter-test"]
+        //,
+        //["com.h2database:h2"]
+    )
+    annotationProcessor 'org.projectlombok:lombok:1.18.6'
+}

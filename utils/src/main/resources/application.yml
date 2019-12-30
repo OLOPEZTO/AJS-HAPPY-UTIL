@@ -1,0 +1,14 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+app:
+  version: V.19.12.30b Servicios API REST
+  usuario:
+    id: admin
+    pwd: admin
+  email:
+    ide: formatos@villaeducativa.edu.mx
+    alias: Administrador
+    restUri: https://hk-util-pro.appspot.com/api/v1
