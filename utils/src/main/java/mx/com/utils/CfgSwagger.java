@@ -43,10 +43,10 @@ public class CfgSwagger {
   @Bean
   public Docket apiBitacora() {
     return new Docket(DocumentationType.SWAGGER_2)
-        .groupName("Storage")
+        .groupName("Image")
         .apiInfo(apiInfo())
         .select()
-        .apis(RequestHandlerSelectors.basePackage("mx.com.utils.controller.rest.storage"))
+        .apis(RequestHandlerSelectors.basePackage("mx.com.utils.controller.rest.image"))
         .paths(regex("/api.*"))
         .build();
   }

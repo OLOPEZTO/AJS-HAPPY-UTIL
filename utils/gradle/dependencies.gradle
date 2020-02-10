@@ -11,7 +11,7 @@ dependencies {
 	    // SPRING
         ["org.springframework.boot:spring-boot-starter"],
         ["org.springframework.boot:spring-boot-starter-web"],
-        //["org.springframework.boot:spring-boot-starter-data-jpa"],
+        ["org.springframework.boot:spring-boot-starter-data-jpa"],
         ["org.springframework.boot:spring-boot-starter-actuator"],
         ["org.springframework.boot:spring-boot-configuration-processor"],
 		["org.springframework.boot:spring-boot-starter-hateoas"],
@@ -37,7 +37,11 @@ dependencies {
     	["com.google.oauth-client:google-oauth-client-jetty:1.23.0"],
     	["com.google.apis:google-api-services-slides:v1-rev294-1.23.0"],
     	// DRIVE
-    	["com.google.apis:google-api-services-drive:v3-rev110-1.23.0"]
+    	["com.google.apis:google-api-services-drive:v3-rev110-1.23.0"],
+    	// MYSQL
+        ["mysql:mysql-connector-java:${mysqlVersion}"],
+        // Transform
+        ["org.apache.commons:commons-collections4:${commonsCollectionsVersion}"]
     )
     
     providedRuntime('org.apache.tomcat.embed:tomcat-embed-jasper')
