@@ -13,6 +13,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,6 +39,11 @@ public class ImagenSRV {
 	  
 	  @Autowired
 	  private KbDoctoTrans kbDoctoTrans;
+	  
+	@GetMapping(path="/wakeup")
+	public String wakeup() {
+		return "";
+	}
 	  
 	@PostMapping(path="/{idPersona}/{idGrupo}/{idFormato}/{idDocto}/{indx}", consumes = { "multipart/form-data" })
 	public void sendDocto(
